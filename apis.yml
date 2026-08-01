@@ -1,7 +1,28 @@
 aid: paydiant
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/paydiant.png
 name: Paydiant
-description: Paydiant is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Paydiant was a Boston-based mobile-wallet, point-of-sale and cloud payments
+  platform, backed by General Catalyst, that let banks, merchants and retailers
+  build their own white-label mobile-payment and loyalty apps (notably powering
+  the retailer-led MCX "CurrentC" wallet). PayPal acquired Paydiant in 2015 and
+  folded the technology into its in-store and merchant products; Paydiant no
+  longer operates as an independent company. This API Evangelist profile was
+  surfaced as a General Catalyst portfolio lead; an enrichment probe on
+  2026-07-20 found no live independent API surface — the paydiant.com domain and
+  its api/developer/docs subdomains wildcard-resolve to a PayPal/MarkMonitor
+  brand-protection parking IP (3.33.139.32) and serve no content.
 url: https://raw.githubusercontent.com/api-evangelist/paydiant/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,37 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: acquired-by-paypal-2015
+x-probe:
+  date: '2026-07-20'
+  domain: paydiant.com
+  dns: 3.33.139.32
+  nameservers: markmonitor.com
+  http_status: '000-timeout'
+  subdomains_checked:
+  - api.paydiant.com
+  - developer.paydiant.com
+  - docs.paydiant.com
+  finding: no live API surface; domain parked under PayPal brand protection
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Payments
+- Mobile Wallet
+- Point of Sale
+- Loyalty
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1

@@ -53,7 +53,7 @@ x-probe:
   finding: no live API surface; domain parked under PayPal brand protection
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-09-15'
+modified: '2026-09-16'
 tags:
 - Company
 - Payments
@@ -61,6 +61,7 @@ tags:
 - Point-of-Sale
 - Loyalty
 - Acquired
+- Defunct
 tags_raw:
 - Company
 - Payments
@@ -68,6 +69,7 @@ tags_raw:
 - Point of Sale
 - Loyalty
 - Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
